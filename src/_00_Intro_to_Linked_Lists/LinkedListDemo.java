@@ -32,6 +32,28 @@ public class LinkedListDemo {
          * 
          */
 
+    	LinkedList<Integer> list = new LinkedList<>();
+    	
+
+    	
+    	
+    	list.add(4);
+    	list.add(5);
+    	list.add(6);
+    	list.add(7);
+    	list.remove(0);
+    	list.print();
+    	
+    	Node<Integer> head = list.getHead();
+    	
+    	
+    	for (int i = 0; i<list.size();i++) {
+    		head.setValue(head.getValue()*2);
+    		head = head.getNext();
+    		
+    	}
+    list.print();
+    	
     }
 
 }
