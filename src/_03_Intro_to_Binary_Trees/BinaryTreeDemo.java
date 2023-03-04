@@ -34,6 +34,61 @@ public class BinaryTreeDemo {
 
     public static void main(String[] args) {
 
+    	BinaryTree<Integer> tree = new BinaryTree<>();
+    	
+    	for(int i = 0; i<5;i++) {
+    		tree.insert(i);
+    	}
+    	for(int i = 0; i>-5;i--) {
+    		tree.insert(i);
+    	}
+    	
+    	tree.search(4);
+    	
+    	tree.delete(3);
+      
+  
+    	
+    	Node<Integer> root = tree.getRoot();
+    	 if(root!=null) {
+    	     	boolean notNull =true;
+    	         while (notNull) {
+    	   		root.setValue(root.getValue()*5);
+    	   		root = root.getLeft(); 
+    	   		
+    	   		if(root!=null) {
+    	   			continue;
+    	   		}
+    	   		else {
+    	   			notNull = false;
+    	   		}
+    	   	}
+    	         
+    	         
+    	 }
+    	 
+    	 root = tree.getRoot();
+    	 if(root!=null) {
+ 	     	boolean notNull =true;
+ 	         while (notNull) {
+ 	   		root.setValue(root.getValue()*5);
+ 	   		root = root.getRight(); 
+ 	   		
+ 	   		if(root!=null) {
+ 	   			continue;
+ 	   		}
+ 	   		else {
+ 	   			notNull = false;
+ 	   		}
+ 	   	}
+ 	         
+ 	         
+ 	 }
+    	 
+    	 
+    		tree.printVertical();
+        	tree.printHorizontal();
+    	
     }
 
 }
