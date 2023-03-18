@@ -1,5 +1,7 @@
 package _06_How_Many_Are_Smaller_Than_Me;
 
+import java.util.Random;
+
 import _05_Intro_to_AVL_Trees.AVLNode;
 import _05_Intro_to_AVL_Trees.AVLTree;
 
@@ -15,9 +17,19 @@ public class HowManyAreSmallerThanMe {
      */
 
     public int howManyAreSmallerThanMe(AVLTree<Integer> avlTree, int me) {
-
-        return 0;
-
+    
+    	AVLTree<Integer> at = new AVLTree<Integer>();
+    	
+    	
+    	int steps = 0;
+    	AVLNode<Integer> root;
+    	
+    	root = at.getRoot();
+    	
+        return steps;
+        
     }
+    
+    
 
 }
